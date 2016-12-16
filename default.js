@@ -75,7 +75,7 @@ function polygonCoordinates(){
 
 };
 
-// Getting the latlng fro textarea and Spliting the latlng based on new line
+// Getting the latlng from textarea and Spliting the latlng based on new line
 
 function textArea(){
 	var text = document.getElementById("info").value;
