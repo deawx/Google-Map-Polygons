@@ -1,3 +1,5 @@
+//Initializing the google map with roadmap view
+
 function init(){
 	var myDiv = document.getElementById("mymap");
 	var mapOptions = {
@@ -28,6 +30,7 @@ function init(){
 
 }
 
+//Imported latitudes and longitudes from textarea and spliting them based on comma seperators
 
 function importLatLng(splitValue){
 	var latlng = [];
@@ -53,6 +56,8 @@ function importLatLng(splitValue){
 	google.maps.event.addListener(polygon.getPath(), "set_at", polygonCoordinates);
 };
 
+//Printing the coordinates as result/output
+
 function polygonCoordinates(){
 	var len = polygon.getPath().getLength();
 	var str = "";
@@ -69,6 +74,8 @@ function polygonCoordinates(){
 	p.value = str;
 
 };
+
+// Getting the latlng fro textarea and Spliting the latlng based on new line
 
 function textArea(){
 	var text = document.getElementById("info").value;
